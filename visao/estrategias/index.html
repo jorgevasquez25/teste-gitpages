@@ -1,0 +1,1668 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="SIGMA — Sistema Integrado de Gestão de Matrículas">
+      
+      
+      
+        <link rel="canonical" href="https://jorgevasquez25.github.io/teste-gitpages/visao/estrategias/">
+      
+      
+        <link rel="prev" href="../intervencao-social/">
+      
+      
+        <link rel="next" href="../engenharia-requisitos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>4. Estratégias de Engenharia de Software - Documentação de Requisitos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4-estrategias-de-engenharia-de-software" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Documentação de Requisitos" class="md-header__button md-logo" aria-label="Documentação de Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 152a88 88 0 1 0 0-176 88 88 0 1 0 0 176m0 298.7V301.4c16.3-6.8 32.9-13.7 49.7-20.7 39-16.2 80.8-24.6 123.1-24.6H448v160h-19.2c-59.1 0-117.7 11.7-172.3 34.5l-.5.2zm0-218.7-25.1-10.5C184.1 202 133.9 192 83.2 192H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h35.2c50.7 0 100.9 10 147.7 29.5l12.8 5.3c7.9 3.3 16.7 3.3 24.6 0l12.8-5.3c46.8-19.5 97-29.5 147.7-29.5H464c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48h-35.2c-50.7 0-100.9 10-147.7 29.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Requisitos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Estratégias de Engenharia de Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jorgevasquez25/teste-gitpages" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    teste-gitpages
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Visão do Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../requisitos/" class="md-tabs__link">
+          
+  
+  
+  Requisitos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../atividades/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Atividades
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../atas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Atas de Reunião
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../videos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Entrega de vídeos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referências
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentação de Requisitos" class="md-nav__button md-logo" aria-label="Documentação de Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 152a88 88 0 1 0 0-176 88 88 0 1 0 0 176m0 298.7V301.4c16.3-6.8 32.9-13.7 49.7-20.7 39-16.2 80.8-24.6 123.1-24.6H448v160h-19.2c-59.1 0-117.7 11.7-172.3 34.5l-.5.2zm0-218.7-25.1-10.5C184.1 202 133.9 192 83.2 192H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h35.2c50.7 0 100.9 10 147.7 29.5l12.8 5.3c7.9 3.3 16.7 3.3 24.6 0l12.8-5.3c46.8-19.5 97-29.5 147.7-29.5H464c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48h-35.2c-50.7 0-100.9 10-147.7 29.5z"/></svg>
+
+    </a>
+    Documentação de Requisitos
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jorgevasquez25/teste-gitpages" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    teste-gitpages
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão do Produto e Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cenario-atual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Cenário Atual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solucao-proposta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Solução Proposta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intervencao-social/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Intervenção Social
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias de Engenharia de Software
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias de Engenharia de Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-estrategia-priorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Estratégia Priorizada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Estratégia Priorizada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-adaptacao-do-openup-ao-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 Adaptação do OpenUP ao Projeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-relacao-entre-os-artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 Relação entre os Artefatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-direcao-dos-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3 Direção dos Riscos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-quadro-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Quadro Comparativo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Justificativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 Justificativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adequacao-ao-tamanho-da-equipe-e-das-partes-interessadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Adequação ao tamanho da equipe e das partes interessadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-combinacao-de-multiplas-vantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Combinação de múltiplas vantagens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aderencia-eficaz-as-praticas-de-engenharia-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aderência eficaz às práticas de Engenharia de Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engenharia-requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma e Entregas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Interação entre Equipe e Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Lições Aprendidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Requisitos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/nao-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Não Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/feedbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisão dos Feedbacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/priorizacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priorização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/mvp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atividades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atividades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas de Reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entrega de vídeos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-estrategia-priorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Estratégia Priorizada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Estratégia Priorizada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-adaptacao-do-openup-ao-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 Adaptação do OpenUP ao Projeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-relacao-entre-os-artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 Relação entre os Artefatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-direcao-dos-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3 Direção dos Riscos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-quadro-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Quadro Comparativo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Justificativa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 Justificativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adequacao-ao-tamanho-da-equipe-e-das-partes-interessadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Adequação ao tamanho da equipe e das partes interessadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-combinacao-de-multiplas-vantagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Combinação de múltiplas vantagens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aderencia-eficaz-as-praticas-de-engenharia-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aderência eficaz às práticas de Engenharia de Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="4-estrategias-de-engenharia-de-software">4. Estratégias de Engenharia de Software<a class="headerlink" href="#4-estrategias-de-engenharia-de-software" title="Permanent link">&para;</a></h1>
+<h2 id="41-estrategia-priorizada">4.1 Estratégia Priorizada<a class="headerlink" href="#41-estrategia-priorizada" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Abordagem:</strong> a equipe optou pela abordagem híbrida. De acordo com essa prática, aspectos ágeis como a importância do produto funcionando e de o cliente estar disponível para comentários também são aplicados. As dimensões de uma abordagem centrada em planos, como fases e marcos, também são preservadas. Essas escolhas surgiram da suposição da equipe de que o cliente estará disponível para comentários durante todo o desenvolvimento do projeto e quererá alterações, mas também dos desafios representados pelo processamento de quantidades substanciais de dados, pela infraestrutura física da instituição de caridade e pelas questões relacionadas à segurança.</li>
+<li><strong>Ciclo de vida:</strong> a abordagem escolhida inclui a incorporação de aspectos iterativos e incrementais ao processo de desenvolvimento do software. Isso significa que, durante todo o ciclo de vida, alguns aspectos do sistema serão priorizados, planejados aprofundadamente, construídos e colocados em produção. Ao mesmo tempo, o escopo do produto crescerá ciclicamente de acordo com os resultados dessas etapas e os feedbacks do cliente (a secretaria, a coordenação e a direção da Creche Estação Vida).</li>
+<li><strong>Processo:</strong> para implementar a estratégia e o ciclo de vida escolhidos, a equipe precisa de um método específico, que, neste caso, é o <strong>OpenUP</strong>. Esse processo é essencialmente uma variação mais leve do UP original e, como tal, é bem-sucedido em equipes menores e com escopo em transformação. Ele possui os benefícios tanto de uma abordagem centrada em planos quanto de uma abordagem ágil, e a quantidade total de documentação necessária é minimizada sem sacrificar a qualidade.</li>
+</ul>
+<h3 id="411-adaptacao-do-openup-ao-projeto">4.1.1 Adaptação do OpenUP ao Projeto<a class="headerlink" href="#411-adaptacao-do-openup-ao-projeto" title="Permanent link">&para;</a></h3>
+<p>Quando se escolhe um método, ele não é, nem de longe, seguido como um conjunto rígido de regras e regulamentos. A equipe escolheu algumas das opções oferecidas como úteis para o projeto atual, conforme descrito abaixo.</p>
+<h3 id="412-relacao-entre-os-artefatos">4.1.2 Relação entre os Artefatos<a class="headerlink" href="#412-relacao-entre-os-artefatos" title="Permanent link">&para;</a></h3>
+<p>Dois dos artefatos escolhidos para este projeto podem parecer redundantes: casos de uso e histórias de usuário. A equipe resolveu essa situação especificando relações claras para evitar ambiguidades, conforme mostrado na tabela abaixo.</p>
+<table>
+<thead>
+<tr>
+<th>Características</th>
+<th>Casos de Uso</th>
+<th>Histórias de Usuário</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Objetivo</td>
+<td>Descrição do sistema de acordo com seus atores e ações</td>
+<td>Descrição do sistema do ponto de vista dos usuários</td>
+</tr>
+<tr>
+<td>Uso</td>
+<td>Principal para desenvolvimento e validação</td>
+<td>Complementares aos casos de uso; usadas para demonstração às partes interessadas</td>
+</tr>
+<tr>
+<td>Nível</td>
+<td>Nível mais alto de descrição, com refinamento gradual; nível de detalhe maior</td>
+<td>Breve e casual; nível mais baixo de detalhe</td>
+</tr>
+<tr>
+<td>Relação</td>
+<td>Cada história de usuário é inspirada em pelo menos alguns casos de uso</td>
+<td>Cada caso de uso pode ser derivado de várias histórias de usuário</td>
+</tr>
+<tr>
+<td>Exemplo</td>
+<td>A história de usuário "Como secretária, eu quero cadastrar um aluno para ter acesso aos dados" é baseada no caso de uso "Cadastrar aluno"</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="413-direcao-dos-riscos">4.1.3 Direção dos Riscos<a class="headerlink" href="#413-direcao-dos-riscos" title="Permanent link">&para;</a></h3>
+<p>O OpenUP tem sido amplamente orientado por riscos desde seu surgimento. Assim, a equipe precisa abordar primeiro os riscos significativos que se aplicam ao projeto, com aqueles que são menos prováveis sendo abordados posteriormente ou ignorados. Os riscos significativos identificados são apresentados abaixo, juntamente com as formas como serão enfrentados.</p>
+<table>
+<thead>
+<tr>
+<th>Risco</th>
+<th>Maneira de Enfrentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segurança</td>
+<td>Garantir a confidencialidade e a proteção de informações pessoais; controlar quem tem acesso às informações e ao sistema como um todo.</td>
+</tr>
+<tr>
+<td>Migração</td>
+<td>Determinar se todos os documentos físicos serão convertidos para eletrônicos; se não forem, como a equipe administrará aqueles que continuam sendo usados.</td>
+</tr>
+<tr>
+<td>Infraestrutura</td>
+<td>Ensinar e treinar os membros da equipe sobre tecnologias que estejam alinhadas às capacidades da Creche Estação Vida.</td>
+</tr>
+<tr>
+<td>Arquitetura de Armazenamento</td>
+<td>Definir esse aspecto em uma base iterativa e incremental, em vez de concentrá-lo em uma única etapa, considerando o tamanho e a natureza do projeto.</td>
+</tr>
+<tr>
+<td>Controle de Acesso</td>
+<td>Definir os tipos de permissão para diferentes indivíduos/entidades.</td>
+</tr>
+<tr>
+<td>Recuperação de Dados</td>
+<td>Garantir que a equipe esteja ciente de backup e restauração em caso de perda de dados.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="42-quadro-comparativo">4.2 Quadro Comparativo<a class="headerlink" href="#42-quadro-comparativo" title="Permanent link">&para;</a></h2>
+<p>Quadro comparativo entre os dois processos que poderiam ser utilizados no projeto.</p>
+<table>
+<thead>
+<tr>
+<th>Critérios</th>
+<th>OpenUP</th>
+<th>XP (Extreme Programming)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo</td>
+<td>Processo de desenvolvimento de software</td>
+<td>Processo de desenvolvimento de software</td>
+</tr>
+<tr>
+<td>Abordagem</td>
+<td>Abordagem híbrida</td>
+<td>Abordagem centrada em princípios</td>
+</tr>
+<tr>
+<td>Ciclo de vida</td>
+<td>Iterativo incremental</td>
+<td>Iterativo incremental</td>
+</tr>
+<tr>
+<td>Documentação</td>
+<td>Documentação leve</td>
+<td>Documentação leve</td>
+</tr>
+<tr>
+<td>Papéis</td>
+<td>Analista, Desenvolvedor, Testador, Gerente de Projeto</td>
+<td>Cliente, Programador, Coach, Tracker</td>
+</tr>
+<tr>
+<td>Requisitos</td>
+<td>Elicitação gradual, foco em casos de uso leves e na orientação por riscos</td>
+<td>Elicitação de histórias por partes interessadas, registradas em releases</td>
+</tr>
+<tr>
+<td>Validação</td>
+<td>Validação contínua e incremental (por exemplo, revisão e demonstração do sistema em cada iteração)</td>
+<td>Validação pelo cliente com testes automatizados de aceitação</td>
+</tr>
+<tr>
+<td>Adaptabilidade</td>
+<td>Moderadamente alta</td>
+<td>Altamente adaptável</td>
+</tr>
+<tr>
+<td>Vantagens</td>
+<td>Boa combinação de características de processo centrado no modelo e aspectos ágeis; boa opção para equipes e projetos menores; dá uma introdução suave tanto para equipes quanto para clientes ao estilo ágil</td>
+<td>Boa adaptabilidade; validação contínua por partes interessadas; testes de aceitação automatizados; documentação mínima de apoio e de artefato</td>
+</tr>
+<tr>
+<td>Desvantagens</td>
+<td>Exige compreensão prévia dos conceitos centrais do UP; menos confiável para grandes projetos</td>
+<td>Exige participação intensiva de partes interessadas; não tão adaptável a alguns aspectos de modelagem; pouca documentação disponível para certos modelos; não tão confiável para projetos maiores</td>
+</tr>
+<tr>
+<td>Foco</td>
+<td>Projetos e equipes de pequeno a médio porte, fornecimento leve de documentação</td>
+<td>Projetos e equipes de pequeno a médio porte, fornecimento leve de documentação</td>
+</tr>
+<tr>
+<td>Conclusão</td>
+<td><strong>Adequado ao projeto</strong></td>
+<td>Seria potencialmente aplicável ao projeto, mas o XP requer a cooperação do cliente em níveis muito mais altos e abordagens técnicas específicas que não estão diretamente relacionadas aos problemas centrais do projeto.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="43-justificativa">4.3 Justificativa<a class="headerlink" href="#43-justificativa" title="Permanent link">&para;</a></h2>
+<p>Há alguns pontos críticos que precisam ser considerados ao escolher um processo de desenvolvimento de software. Eles se refletem na decisão da equipe em favor do OpenUP:</p>
+<ol>
+<li>Adequação ao tamanho da equipe e das partes interessadas;</li>
+<li>Combinação de múltiplas vantagens;</li>
+<li>Aderência eficaz às práticas de Engenharia de Requisitos.</li>
+</ol>
+<h3 id="1-adequacao-ao-tamanho-da-equipe-e-das-partes-interessadas">1. Adequação ao tamanho da equipe e das partes interessadas<a class="headerlink" href="#1-adequacao-ao-tamanho-da-equipe-e-das-partes-interessadas" title="Permanent link">&para;</a></h3>
+<p>Por ser um processo leve, o OpenUP parece ser uma boa escolha para projetos de equipes e clientes menores. Ele é amplamente orientado por riscos, com foco em definir a direção do projeto em uma base iterativa e incremental. Ao mesmo tempo, contém todas as características essenciais de processos tradicionais de desenvolvimento de software de nível médio. Isso pode ser visto na documentação mínima fornecida pelas fases do projeto. Além disso, devido ao ambiente acadêmico do projeto, os requisitos do cliente não são difíceis de compreender, mesmo para uma pessoa sem conhecimento prévio em desenvolvimento de software.</p>
+<h3 id="2-combinacao-de-multiplas-vantagens">2. Combinação de múltiplas vantagens<a class="headerlink" href="#2-combinacao-de-multiplas-vantagens" title="Permanent link">&para;</a></h3>
+<p>No OpenUP, características de vários processos de desenvolvimento de software são combinadas em um único framework. Em particular, ele inclui abordagens centradas em planos e ágeis. Assim, é capaz de proporcionar aos projetos estabilidade suficiente com a flexibilidade necessária ao mesmo tempo. Para este projeto, isso é especialmente útil porque alguns dos requisitos do cliente não são claramente definidos, mas ainda assim deveriam fazer parte do projeto. Além disso, há alguns riscos de alto impacto que precisam ser abordados com atenção especial. Por outro lado, a orientação por riscos e a abordagem iterativa são convenientes para dividir grandes problemas em subitens mais simples. De modo geral, essas características tornam possível abordar simultaneamente a flexibilidade e a estabilidade do projeto.</p>
+<h3 id="3-aderencia-eficaz-as-praticas-de-engenharia-de-requisitos">3. Aderência eficaz às práticas de Engenharia de Requisitos<a class="headerlink" href="#3-aderencia-eficaz-as-praticas-de-engenharia-de-requisitos" title="Permanent link">&para;</a></h3>
+<p>Um dos aspectos do OpenUP que causam preocupação à equipe é a correspondência entre as práticas de Engenharia de Requisitos e as práticas de Engenharia de Software. No entanto, ao analisar os objetivos básicos por trás de ambos os conjuntos de práticas, torna-se evidente uma forte correlação entre eles. Ambos concentram-se em obter uma compreensão clara e suficiente do problema a ser resolvido, em encontrar soluções viáveis para ele e em comunicar essas soluções de forma eficaz aos diversos stakeholders. Em termos concretos, isso significa que práticas de Engenharia de Requisitos como elicitação e descoberta, análise e consenso, declaração e representação, e práticas de Engenharia de Software como fases do processo e artefatos são aplicadas de maneira bastante semelhante no OpenUP. Uma correspondência clara entre casos de uso e histórias de usuário também foi identificada, como uma etapa crucial para evitar a confusão entre esses artefatos no projeto.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../intervencao-social/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 3. Intervenção Social">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                3. Intervenção Social
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../engenharia-requisitos/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 5. Engenharia de Requisitos">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                5. Engenharia de Requisitos
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

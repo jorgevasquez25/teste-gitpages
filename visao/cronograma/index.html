@@ -1,0 +1,1718 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="SIGMA — Sistema Integrado de Gestão de Matrículas">
+      
+      
+      
+        <link rel="canonical" href="https://jorgevasquez25.github.io/teste-gitpages/visao/cronograma/">
+      
+      
+        <link rel="prev" href="../engenharia-requisitos/">
+      
+      
+        <link rel="next" href="../interacao/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>6. Cronograma e Entregas - Documentação de Requisitos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-cronograma-e-entregas" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Documentação de Requisitos" class="md-header__button md-logo" aria-label="Documentação de Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 152a88 88 0 1 0 0-176 88 88 0 1 0 0 176m0 298.7V301.4c16.3-6.8 32.9-13.7 49.7-20.7 39-16.2 80.8-24.6 123.1-24.6H448v160h-19.2c-59.1 0-117.7 11.7-172.3 34.5l-.5.2zm0-218.7-25.1-10.5C184.1 202 133.9 192 83.2 192H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h35.2c50.7 0 100.9 10 147.7 29.5l12.8 5.3c7.9 3.3 16.7 3.3 24.6 0l12.8-5.3c46.8-19.5 97-29.5 147.7-29.5H464c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48h-35.2c-50.7 0-100.9 10-147.7 29.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Requisitos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Cronograma e Entregas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jorgevasquez25/teste-gitpages" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    teste-gitpages
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Visão do Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../requisitos/" class="md-tabs__link">
+          
+  
+  
+  Requisitos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../atividades/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Atividades
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../atas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Atas de Reunião
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../videos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Entrega de vídeos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../referencias/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referências
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentação de Requisitos" class="md-nav__button md-logo" aria-label="Documentação de Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 152a88 88 0 1 0 0-176 88 88 0 1 0 0 176m0 298.7V301.4c16.3-6.8 32.9-13.7 49.7-20.7 39-16.2 80.8-24.6 123.1-24.6H448v160h-19.2c-59.1 0-117.7 11.7-172.3 34.5l-.5.2zm0-218.7-25.1-10.5C184.1 202 133.9 192 83.2 192H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h35.2c50.7 0 100.9 10 147.7 29.5l12.8 5.3c7.9 3.3 16.7 3.3 24.6 0l12.8-5.3c46.8-19.5 97-29.5 147.7-29.5H464c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48h-35.2c-50.7 0-100.9 10-147.7 29.5z"/></svg>
+
+    </a>
+    Documentação de Requisitos
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jorgevasquez25/teste-gitpages" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    teste-gitpages
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão do Produto e Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto e Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cenario-atual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Cenário Atual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solucao-proposta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Solução Proposta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intervencao-social/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Intervenção Social
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estrategias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estratégias de Engenharia de Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engenharia-requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma e Entregas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Cronograma e Entregas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-das-iteracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo das iterações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-1-concepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 1 — Concepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-2-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 2 — Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-3-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 3 — Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-4-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 4 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-5-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 5 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-6-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 6 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-7-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 7 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-8-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 8 — Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-9-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 9 — Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-cada-iteracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de cada iteração
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Interação entre Equipe e Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Lições Aprendidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Requisitos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/nao-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Não Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/feedbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisão dos Feedbacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/priorizacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priorização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/mvp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atividades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atividades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas de Reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entrega de vídeos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-das-iteracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo das iterações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalhamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-1-concepcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 1 — Concepção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-2-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 2 — Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-3-elaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 3 — Elaboração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-4-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 4 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-5-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 5 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-6-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 6 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-7-construcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 7 — Construção
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-8-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 8 — Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-9-transicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteração 9 — Transição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo-de-cada-iteracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ciclo de cada iteração
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="6-cronograma-e-entregas">6. Cronograma e Entregas<a class="headerlink" href="#6-cronograma-e-entregas" title="Permanent link">&para;</a></h1>
+<p>O cronograma do projeto foi estruturado em iterações distribuídas entre as fases do OpenUP, considerando o calendário acadêmico da disciplina e a natureza iterativa e incremental do processo adotado pela equipe.</p>
+<p>Cada iteração, conforme sua etapa no ciclo de vida, contempla atividades de refinamento e especificação dos requisitos, validação com os stakeholders, construção e verificação das funcionalidades quando aplicável, validação do incremento e atualização dos artefatos de Engenharia de Requisitos e da rastreabilidade.</p>
+<p>Durante a Concepção e a Elaboração, o foco principal está na compreensão do problema, definição e refinamento dos requisitos, priorização do backlog, definição do MVP e validação da solução. A implementação do produto será iniciada após a definição dos requisitos do MVP, conforme a organização das atividades da disciplina.</p>
+<p>A participação do cliente ocorre de forma contínua, principalmente por meio da diretora, da coordenadora e das secretárias da Creche Estação Vida. As secretárias participam especialmente da validação dos protótipos, fluxos e incrementos, por serem as principais usuárias da solução.</p>
+<h2 id="resumo-das-iteracoes">Resumo das iterações<a class="headerlink" href="#resumo-das-iteracoes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Iteração</th>
+<th>Fase</th>
+<th>Período</th>
+<th>Foco</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#iteracao-1-concepcao">1</a></td>
+<td>Concepção</td>
+<td>13/08 a 08/09</td>
+<td>Visão do produto e escopo inicial (CP1 a CP7)</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"/></svg></span> Concluída</td>
+</tr>
+<tr>
+<td><a href="#iteracao-2-elaboracao">2</a></td>
+<td>Elaboração</td>
+<td>09/09 a 29/09</td>
+<td>Levantamento, análise e priorização; proposta inicial de MVP</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"/></svg></span> Concluída</td>
+</tr>
+<tr>
+<td><a href="#iteracao-3-elaboracao">3</a></td>
+<td>Elaboração</td>
+<td>30/09 a 19/10</td>
+<td>Refinamento do MVP; CP1 a CP5 e CP7</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2.03v2.02c4.39.54 7.5 4.53 6.96 8.92-.46 3.64-3.32 6.53-6.96 6.96v2c5.5-.55 9.5-5.43 8.95-10.93-.45-4.75-4.22-8.5-8.95-8.97m-2 .03c-1.95.19-3.81.94-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68zM4.26 5.67A9.9 9.9 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5.04 5.37-1.43 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63M12.5 7v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg></span> Em andamento</td>
+</tr>
+<tr>
+<td><a href="#iteracao-4-construcao">4</a></td>
+<td>Construção</td>
+<td>20/10 a 29/10</td>
+<td>CP1 e CP4</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+<tr>
+<td><a href="#iteracao-5-construcao">5</a></td>
+<td>Construção</td>
+<td>30/10 a 05/11</td>
+<td>CP2 e CP4</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+<tr>
+<td><a href="#iteracao-6-construcao">6</a></td>
+<td>Construção</td>
+<td>06/11 a 12/11</td>
+<td>CP5</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+<tr>
+<td><a href="#iteracao-7-construcao">7</a></td>
+<td>Construção</td>
+<td>13/11 a 19/11</td>
+<td>CP3 e CP7</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+<tr>
+<td><a href="#iteracao-8-transicao">8</a></td>
+<td>Transição</td>
+<td>24/11 a 03/12</td>
+<td>Homologação do MVP</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+<tr>
+<td><a href="#iteracao-9-transicao">9</a></td>
+<td>Transição</td>
+<td>04/12 a 10/12</td>
+<td>Implantação e aceite do MVP</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Planejada</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detalhamento">Detalhamento<a class="headerlink" href="#detalhamento" title="Permanent link">&para;</a></h2>
+<h3 id="iteracao-1-concepcao">Iteração 1 — Concepção<a class="headerlink" href="#iteracao-1-concepcao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 13/08 a 08/09</li>
+<li><strong>Foco / CPs relacionadas:</strong> definição da visão do produto e levantamento inicial do escopo, contemplando a identificação preliminar das CP1 a CP7.</li>
+<li><strong>Principais atividades e escopo:</strong> definir a visão do produto, delimitar o problema, identificar as principais necessidades do cliente e estabelecer as características iniciais da solução. Organizar os requisitos iniciais e documentar as estratégias e os riscos do projeto.</li>
+<li><strong>Entregas e critérios de validação:</strong> documento de visão. A entrega da unidade foi finalizada em setembro, com registro da versão 1.1 em 07/09/2026.</li>
+<li><strong>Situação:</strong> Concluída</li>
+</ul>
+<h3 id="iteracao-2-elaboracao">Iteração 2 — Elaboração<a class="headerlink" href="#iteracao-2-elaboracao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 09/09 a 29/09</li>
+<li><strong>Foco / CPs relacionadas:</strong> levantamento, análise e priorização das CP1 a CP7, com definição preliminar das funcionalidades prioritárias e proposta inicial de MVP.</li>
+<li><strong>Principais atividades e escopo:</strong> consolidar, revisar e ajustar, a partir das revisões realizadas, os requisitos; analisar prioridades e definir proposta inicial para o MVP.</li>
+<li><strong>Entregas e critérios de validação:</strong> <a href="../../requisitos/">requisitos documentados</a>, resultados da revisão por pares, ajustes registrados e matriz de priorização. As correções relacionadas às issues foram incorporadas à versão 2.0 do documento, registrada em 24/09/2026.</li>
+<li><strong>Situação:</strong> Concluída</li>
+</ul>
+<h3 id="iteracao-3-elaboracao">Iteração 3 — Elaboração<a class="headerlink" href="#iteracao-3-elaboracao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 30/09 a 19/10</li>
+<li><strong>Foco / CPs relacionadas:</strong> refinamento do MVP e preparação das CP1 a CP5 e CP7. A CP6 permanece fora do MVP conforme decisão tomada com o cliente em 06/10/2026.</li>
+<li><strong>Principais atividades e escopo:</strong> consolidar a definição do MVP a partir da validação realizada com o cliente em 06/10/2026. Incorporar os retornos recebidos, elaborar os protótipos das telas e refinar os fluxos de uso. Detalhar o modelo de dados, o controle de acesso, o registro de alterações nos cards, a segurança, os backups, a hospedagem e os limites da migração de dados.</li>
+<li><strong>Entregas e critérios de validação:</strong> <a href="../../requisitos/mvp/">MVP aprovado pelo cliente</a>; protótipos e fluxos de uso sujeitos à validação das partes interessadas. A reunião para apresentar os protótipos deve ser agendada e confirmada com o cliente. As decisões técnicas ainda pendentes devem ser registradas antes da implementação.</li>
+<li><strong>Situação:</strong> Em andamento</li>
+</ul>
+<h3 id="iteracao-4-construcao">Iteração 4 — Construção<a class="headerlink" href="#iteracao-4-construcao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 20/10 a 29/10</li>
+<li><strong>Foco / CPs relacionadas:</strong> CP1 — Gerenciamento de cards de matrícula. CP4 — Controle de acesso, como funcionalidade transversal.</li>
+<li><strong>Principais atividades e escopo:</strong> implementar o cadastro e o gerenciamento inicial dos cards de matrícula (CP1), integrando desde o início os mecanismos de autenticação e controle de acesso (CP4). Verificar a criação, a consulta básica e a persistência dos registros, assim como o acesso autorizado às funcionalidades.</li>
+<li><strong>Entregas e critérios de validação:</strong> fluxo inicial de cadastro de cards implementado e testado; autenticação e autorização funcionando nos fluxos desenvolvidos. Revisão interna dos testes e demonstração ao cliente, com data proposta de 29/10/2026.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h3 id="iteracao-5-construcao">Iteração 5 — Construção<a class="headerlink" href="#iteracao-5-construcao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 30/10 a 05/11</li>
+<li><strong>Foco / CPs relacionadas:</strong> CP2 — Edição e atualização de cards de matrícula. Continuidade dos controles de acesso da CP4.</li>
+<li><strong>Principais atividades e escopo:</strong> implementar a edição e a atualização dos cards de matrícula (CP2), considerando o requisito discutido com o cliente de preservar valores anteriores relevantes quando as informações forem alteradas. Verificar também a consistência dos registros após as atualizações.</li>
+<li><strong>Entregas e critérios de validação:</strong> funcionalidades de edição e atualização testadas, com evidências de preservação do histórico definido nos requisitos. Revisão interna e validação com o cliente, com data proposta de 05/11/2026.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h3 id="iteracao-6-construcao">Iteração 6 — Construção<a class="headerlink" href="#iteracao-6-construcao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 06/11 a 12/11</li>
+<li><strong>Foco / CPs relacionadas:</strong> CP5 — Gerenciamento de documentos. Dependência dos cards de matrícula da CP1 e manutenção dos controles de acesso da CP4.</li>
+<li><strong>Principais atividades e escopo:</strong> implementar o gerenciamento de documentos vinculados aos cards de matrícula (CP5), incluindo as operações previstas de anexação, consulta e exclusão. Verificar as permissões de acesso e a integridade dos vínculos entre os documentos e os respectivos cards. Essa funcionalidade será tratada separadamente da edição dos cards, prevista na iteração anterior.</li>
+<li><strong>Entregas e critérios de validação:</strong> gerenciamento de documentos implementado e testado, com verificação dos vínculos, das permissões e das operações previstas. Revisão interna e validação com o cliente, com data proposta de 12/11/2026.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h3 id="iteracao-7-construcao">Iteração 7 — Construção<a class="headerlink" href="#iteracao-7-construcao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 13/11 a 19/11</li>
+<li><strong>Foco / CPs relacionadas:</strong> CP3 — Consulta de informações dos cards de matrícula. CP7 — Gerenciamento de turmas e etapas. Integração com as funcionalidades anteriores e manutenção da CP4.</li>
+<li><strong>Principais atividades e escopo:</strong> implementar a consulta de informações dos cards (CP3) e o gerenciamento de turmas e etapas (CP7). Integrar as funcionalidades desenvolvidas, executar testes de integração e regressão e corrigir problemas encontrados.</li>
+<li><strong>Entregas e critérios de validação:</strong> funcionalidades de consulta, turmas e etapas integradas ao sistema; resultados dos testes registrados; pendências classificadas por impacto e prioridade. Demonstração integrada ao cliente, com data proposta de 19/11/2026, em consonância com o encerramento da Unidade 3.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h3 id="iteracao-8-transicao">Iteração 8 — Transição<a class="headerlink" href="#iteracao-8-transicao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 24/11 a 03/12</li>
+<li><strong>Foco / CPs relacionadas:</strong> homologação do MVP composto pelas CP1, CP2, CP3, CP4, CP5 e CP7. Preparação dos dados, segurança e infraestrutura necessárias à operação do conjunto.</li>
+<li><strong>Principais atividades e escopo:</strong> executar a preparação para implantação, incluindo homologação, testes integrados, verificações de segurança, backup e recuperação, preparação e conferência dos dados e treinamento dos usuários. A migração deverá contemplar apenas os cards de matrícula de 2026, conforme acordado com o cliente, sem incluir o arquivo histórico anterior. Definir também um procedimento de contingência para problemas durante a transição.</li>
+<li><strong>Entregas e critérios de validação:</strong> sistema homologado em ambiente de pré-produção; dados de 2026 preparados e conferidos; procedimentos de backup, recuperação e contingência verificados; usuários orientados. Validação com o cliente, com data proposta de 03/12/2026.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h3 id="iteracao-9-transicao">Iteração 9 — Transição<a class="headerlink" href="#iteracao-9-transicao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Período:</strong> 04/12 a 10/12</li>
+<li><strong>Foco / CPs relacionadas:</strong> implantação e aceite do MVP: CP1, CP2, CP3, CP4, CP5 e CP7. A CP6 não integra o escopo de entrega previsto para este MVP.</li>
+<li><strong>Principais atividades e escopo:</strong> preparar e executar a implantação, desde que a hospedagem, a infraestrutura, a segurança e os mecanismos de backup e recuperação estejam confirmados. Acompanhar o funcionamento inicial, corrigir problemas encontrados, finalizar a documentação e definir responsabilidades de suporte e manutenção após a entrega.</li>
+<li><strong>Entregas e critérios de validação:</strong> sistema disponibilizado para uso somente após a verificação das condições de implantação; testes finais e aceite registrados; documentação e pendências entregues à equipe responsável. A validação final com o cliente tem data proposta de 10/12/2026. O período também deverá contemplar uma margem para correções após a implantação.</li>
+<li><strong>Situação:</strong> Planejada</li>
+</ul>
+<h2 id="ciclo-de-cada-iteracao">Ciclo de cada iteração<a class="headerlink" href="#ciclo-de-cada-iteracao" title="Permanent link">&para;</a></h2>
+<p>Nas iterações em que houver desenvolvimento de funcionalidades, será adotado o seguinte ciclo:</p>
+<ol>
+<li><strong>Refinamento e especificação:</strong> análise dos requisitos necessários para a iteração, atualização dos casos de uso, critérios de aceitação e demais artefatos relacionados.</li>
+<li><strong>Prototipação e validação:</strong> quando houver interface ou alteração de fluxo, elaboração ou atualização do protótipo e validação com as secretárias e demais stakeholders envolvidos.</li>
+<li><strong>Construção:</strong> implementação do incremento correspondente aos requisitos priorizados para a iteração.</li>
+<li><strong>Verificação:</strong> execução de testes funcionais, testes baseados em requisitos, revisão por pares e demais verificações necessárias.</li>
+<li><strong>Validação do incremento:</strong> demonstração da funcionalidade aos stakeholders, coleta de feedback e identificação de ajustes.</li>
+<li><strong>Organização e atualização:</strong> atualização dos requisitos, backlog, matriz de rastreabilidade, decisões e demais artefatos afetados pelo resultado da iteração.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../engenharia-requisitos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 5. Engenharia de Requisitos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                5. Engenharia de Requisitos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../interacao/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 7. Interação entre Equipe e Cliente">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                7. Interação entre Equipe e Cliente
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
