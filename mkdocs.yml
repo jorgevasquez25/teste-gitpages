@@ -1,0 +1,71 @@
+site_name: Documentação de Requisitos
+site_description: SIGMA — Sistema Integrado de Gestão de Matrículas
+site_url: https://jorgevasquez25.github.io/teste-gitpages/
+repo_url: https://github.com/jorgevasquez25/teste-gitpages
+repo_name: teste-gitpages
+
+theme:
+  name: material
+  language: pt-BR
+  icon:
+    logo: fontawesome/solid/book-open-reader
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Visão do Produto e Projeto:
+      - visao/index.md
+      - 1. Cenário Atual: visao/cenario-atual.md
+      - 2. Solução Proposta: visao/solucao-proposta.md
+      - 3. Intervenção Social: visao/intervencao-social.md
+      - 4. Estratégias de Engenharia de Software: visao/estrategias.md
+      - 5. Engenharia de Requisitos: visao/engenharia-requisitos.md
+      - 6. Cronograma e Entregas: visao/cronograma.md
+      - 7. Interação entre Equipe e Cliente: visao/interacao.md
+      - 11. Lições Aprendidas: visao/licoes-aprendidas.md
+  - Requisitos:
+      - requisitos/index.md
+      - Requisitos Funcionais: requisitos/funcionais.md
+      - Requisitos Não Funcionais: requisitos/nao-funcionais.md
+      - Decisão dos Feedbacks: requisitos/feedbacks.md
+      - Priorização: requisitos/priorizacao.md
+      - MVP: requisitos/mvp.md
+  - Atividades: atividades.md
+  - Atas de Reunião: atas.md
+  - Entrega de vídeos: videos.md
+  - Referências: referencias.md
